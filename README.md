@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+![A headshot of the site owner facing forward in front of a white background. Her eyes are looking to the side.](/siteheadshot.jpeg)
 
 You can use the [editor on GitHub](https://github.com/beyn4/beyn4.github.io/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
