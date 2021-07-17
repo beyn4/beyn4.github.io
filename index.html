@@ -3,6 +3,26 @@
   <title>Nadia Bey</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <script language="javascript">
+ 
+  function DisplayVisits() 
+ {   
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+ 
+  // Show the number of visits
+      if (numVisits==1) document.write("This is your first visit.");
+      else document.write("You have visited this page " + numVisits + " times.");
+ 
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+ 
+  </script>
   <style>
     body {
       background-color: #ffa9a3;
@@ -77,46 +97,9 @@
           <p>Hello! I'm Nadia and I am a current student at Duke University in Durham, NC.</p></td>
       </tr>
     </table>
-  </body>
-    <body onload="incrementCount(10)">
-    <div class="main_container" id="id_main_container">
-      <div class="container_inner" id="display_div_id">
-      </div>
-    </div>
+    <script language="javascript">DisplayVisits();</script> 
   </body>
   <footer>
     <p>hosted by github pages</p>
     <p>© 2021 Nadia Bey</p></footer>
 </html>
-<script>
-  var counter_list = [10,10000,10000];
-  var str_counter_0 = counter_list[0];
-  var str_counter_1 = counter_list[1];
-  var str_counter_2 = counter_list[2];
-  var display_str = "";
-  var display_div = document.getElementById("display_div_id");
-
-  function incrementCount(current_count){
-    setInterval(function(){
-      // clear count
-      while (display_div.hasChildNodes()) {
-          display_div.removeChild(display_div.lastChild);
-      }
-      str_counter_0++;
-      if (str_counter_0 > 99) {
-        str_counter_0 = 0; // reset count
-        str_counter_1++;    // increase next count
-      }
-      if(str_counter_1>99999){
-        str_counter_2++;
-      }
-      display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
-      for (var i = 0; i < display_str.length; i++) {
-        var new_span = document.createElement('span');
-        new_span.className = 'num_tiles';
-        new_span.innerText = display_str[i];
-        display_div.appendChild(new_span);
-      }
-    },1000);
-  }
-</script>
