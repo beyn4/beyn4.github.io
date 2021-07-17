@@ -58,8 +58,8 @@
       var first = "this page uses cookies. this is your first visit.";
       var rep = "this page uses cookies. you have visited this page ";
       var times = " times."
-      if (numVisits==1) document.write(first.fontcolor("#595959"));
-      else document.write(rep.fontcolor("#595959") + numVisits.fontcolor("#595959") + times.fontcolor("#595959"));
+      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + " " + times + '</font>');
  
   // Set the cookie to expire 365 days from now
       var today = new Date();
