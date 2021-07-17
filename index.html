@@ -55,8 +55,11 @@
       else numVisits = 1; // the value for the new cookie
  
   // Show the number of visits
-      if (numVisits==1) document.write("This is your first visit.");
-      else document.write("You have visited this page " + numVisits + " times.");
+      var first = "this page uses cookies. this is your first visit.";
+      var rep = "this page uses cookies. you have visited this page ";
+      var times = " times."
+      if (numVisits==1) document.write(first.fontcolor("#595959");
+      else document.write(rep.fontcolor("#595959") + numVisits.fontcolor("#595959") + times.fontcolor("#595959"));
  
   // Set the cookie to expire 365 days from now
       var today = new Date();
@@ -141,8 +144,7 @@
     </table> 
   </body>
   <footer>
-    <p>hosted by github pages</p>
-    <p>© 2021 Nadia Bey</p>
-    <p>This page uses cookies.</p>
-  <script language="javascript">DisplayVisits();</script></footer>
+    <p>hosted by github pages. © 2021 Nadia Bey</p>
+    <p><script language="javascript">DisplayVisits();</script></p>
+  </footer>
 </html>
