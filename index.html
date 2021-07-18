@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   <script language="javascript">
-    function SetCookie (name,value,expires,path,domain,secure) 
+    function SetCookie (name,value,expires,path,domain,secure)
     {
       document.cookie = name + "=" + escape (value) +
         ((expires) ? "; expires=" + expires.toGMTString() : "") +
@@ -12,8 +12,8 @@
         ((domain) ? "; domain=" + domain : "") +
         ((secure) ? "; secure" : "");
     }
-    
-    function DeleteCookie (name,path,domain) 
+
+    function DeleteCookie (name,path,domain)
     {
       if (GetCookie(name)) {
         document.cookie = name + "=" +
@@ -22,7 +22,7 @@
           "; expires=Thu, 01-Jan-70 00:00:01 GMT";
       }
     }
-    
+
     function GetCookie (name)
     {
       var arg = name + "=";
@@ -34,7 +34,7 @@
         if (document.cookie.substring(i, j) == arg)
           return getCookieVal (j);
         i = document.cookie.indexOf(" ", i) + 1;
-        if (i == 0) break; 
+        if (i == 0) break;
       }
       return null;
     }
@@ -46,27 +46,26 @@
     }
   </script>
   <script language="javascript">
- 
-  function DisplayVisits() 
- {   
+
+  function DisplayVisits()
+ {
   // How many visits so far?
       var numVisits = GetCookie("numVisits");
       if (numVisits) numVisits = parseInt(numVisits) + 1;
       else numVisits = 1; // the value for the new cookie
- 
+
   // Show the number of visits
-      var first = "this page uses cookies. this is your first visit.";
-      var rep = "this page uses cookies. you have visited this page ";
-      var times = " times."
+      var first = "This page uses cookies. This is your first visit.";
+      var rep = "This page uses cookies. Times visited: ";
       if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
-      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + " " + times + '</font>');
- 
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
+
   // Set the cookie to expire 365 days from now
       var today = new Date();
       today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
       SetCookie("numVisits", numVisits, today);
   }
- 
+
   </script>
   <style>
     body {
@@ -93,21 +92,21 @@
       color: black;
       float: right;
     }
-    li {
+    li.nav {
       float: left;
       border-right: #f87575
     }
-    li a {
+    li.nav_item a {
       color: #6b0606;
       text-align: center;
       padding: 20px;
       font-size: 30px;
       text-decoration: none;
     }
-    li a:hover {
+    li.nav_item a:hover {
       color: white;
     }
-    li:last child {
+    li.nav:last child {
       border-right: none;
     }
     #home th, #home td {
@@ -123,28 +122,28 @@
       text-align: center;
     }
   </style>
-  <ul>
-  <li><a href="index.html">about</a></li>
-  <li><a href="academics.html">academics</a></li>
-  <li><a href="journalism.html">journalism</a></li>
-  <li><a href="press.html">in the wild</a></li>
-</ul>
+  <nav><ul>
+  <li class='nav_item'><a href="index.html">about</a></li>
+  <li class='nav_item'><a href="academics.html">academics</a></li>
+  <li class='nav_item'><a href="journalism.html">journalism</a></li>
+  <li class='nav_item'><a href="press.html">in the wild</a></li>
+</ul></nav>
 </head>
 <html>
   <body>
     <table id="home">
       <tr><th></th><th></th></tr>
       <tr><td>
-    <img src="https://nadiabey.com/siteheadshot.jpeg" 
-         width="400" 
+    <img src="https://nadiabey.com/siteheadshot.jpeg"
+         width="400"
          height="548" /></td>
         <td>
           <p>Hello! I'm Nadia and I am a current student at Duke University in Durham, NC.</p></td>
       </tr>
-    </table> 
+    </table>
   </body>
   <footer>
-    <p>hosted by github pages. © 2021 Nadia Bey</p>
+    <p>Hosted by GitHub Pages. © 2021 Nadia Bey</p>
     <p><script language="javascript">DisplayVisits();</script></p>
   </footer>
 </html>
