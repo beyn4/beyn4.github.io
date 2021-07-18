@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+  <title>Academics - Nadia Bey</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <script language="javascript">
+    function SetCookie (name,value,expires,path,domain,secure)
+    {
+      document.cookie = name + "=" + escape (value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+    }
+
+    function DeleteCookie (name,path,domain)
+    {
+      if (GetCookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? "; path=" + path : "") +
+          ((domain) ? "; domain=" + domain : "") +
+          "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+      }
+    }
+
+    function GetCookie (name)
+    {
+      var arg = name + "=";
+      var alen = arg.length;
+      var clen = document.cookie.length;
+      var i = 0;
+      while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+          return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+      }
+      return null;
+    }
+    function getCookieVal (offset)
+    {
+      var str = document.cookie.indexOf(";", offset);
+      if(str==-1) str = document.cookie.length;
+      return unescape(document.cookie.substring(offset, str));
+    }
+  </script>
+  <script language="javascript">
+
+  function DisplayVisits()
+ {
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+
+  // Show the number of visits
+      var first = "This page uses cookies. This is your first visit.";
+      var rep = "This page uses cookies. Times visited: ";
+      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
+
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+
+  </script>
+  <style>
+    body {
+      background-color: #ffa9a3;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      padding-top: 60px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+    }
+    h1 {
+      color: black;
+    }
+    p {
+      color: #595959;
+    }
+    ul {
+      font-family: "Lato", sans-serif;
+      list-style-type: none;
+      margin-bottom: 10px;
+      margin-left: auto;
+      padding: 0px 10px 10px 10px;
+      display: inline;
+      color: black;
+      float: right;
+    }
+    li {
+      float: left;
+      border-right: 3px solid #f87575;
+    }
+    li a {
+      color: #6b0606;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    li a:hover {
+      color: white;
+    }
+    li:last child {
+      border-right: none;
+    }
+    footer {
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+  <ul>
+  <li><a href="index.html">about</a></li>
+  <li><a href="academics.html">academics</a></li>
+  <li><a href="journalism.html">journalism</a></li>
+  <li><a href="press.html">in the wild</a></li>
+</ul>
+</head>
+<html>
+<body>
+<p>As a <a href="https://sites.duke.edu/dukeusp/2020/06/18/class-of-2023/">University Scholar</a> and <a href="https://healthpolicy.duke.edu/people/nadia-bey">Margolis Scholar</a> at Duke, the majority of my endeavors have been interdisciplinary. My primary interests are in human health, data, communication and education.</p>
+<h3>Teaching</h3>
+<p><b>HOUSECS 59, DPS Middle School Outreach — Spring 2021, Spring 2022</b></p>
+<p>This undergraduate-led seminar focuses on the sociology of education and has a service-learning component wherein students volunteer at a Durham middle school. My reflections from spring 2021 can be found in <a href="https://twitter.com/nadiabey/status/1353359556156395526?s=20">this Twitter thread</a>.</p>
+<h3>Research</h3>
+<p><b>Margolis Summer Internship 2021</b></p>
+<p>lorem ipsum</p>
+<p><b>Vaccine Equity Project</b></p>
+<p>In spring 2021, I was part of a team that developed policy recommendations for COVID-19 vaccine distribution based on historical case studies. We approached the topic of vaccine access from a feminist perspective, and I contributed to a group report that is now online via <a href="https://www.valuingcare.net/vaccine-equity-research-project">Revaluing Care in the Global Economy</a>.</p>
+<p><b>Explicit and Implicit Language in Prescription Drug Ads</b></p>
+<p>lorem ipsum <a href="https://undergraduateresearch.duke.edu/student-stories/nadia-bey-explicit-vs-implicit-language-and-drug-ads">link</a></p>
+<h3>Presentations</h3>
+<p><b><i>Communicating Toward Health Justice</i>, University Scholars Program Symposium. March 13, 2021.</b></p>
+<p>I talked about the importance of health communication at the annual USP symposium. [add link]</p>
+</body>
+<footer>
+  <p>Hosted by Github Pages. © 2021 Nadia Bey</p>
+  <p><script language="javascript">DisplayVisits();</script></p>
+</footer>
+</html>
