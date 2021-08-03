@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+  <title>Nadia Bey - en espanol</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-91FYR6N67Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-91FYR6N67Z');
+</script>
+  <script language="javascript">
+    function SetCookie (name,value,expires,path,domain,secure)
+    {
+      document.cookie = name + "=" + escape (value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+    }
+
+    function DeleteCookie (name,path,domain)
+    {
+      if (GetCookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? "; path=" + path : "") +
+          ((domain) ? "; domain=" + domain : "") +
+          "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+      }
+    }
+
+    function GetCookie (name)
+    {
+      var arg = name + "=";
+      var alen = arg.length;
+      var clen = document.cookie.length;
+      var i = 0;
+      while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+          return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+      }
+      return null;
+    }
+    function getCookieVal (offset)
+    {
+      var str = document.cookie.indexOf(";", offset);
+      if(str==-1) str = document.cookie.length;
+      return unescape(document.cookie.substring(offset, str));
+    }
+  </script>
+  <script language="javascript">
+
+  function DisplayVisits()
+ {
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+
+  // Show the number of visits
+      var first = "Esta pagina usa cookies. Es su primera visita.";
+      var rep = "Esta pagina usa cookies. Veces vistos: ";
+      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
+
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+
+  </script>
+  <style>
+    body {
+      background-color: #ffa9a3;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      padding-top: 35px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+    }
+    h1 {
+      color: black;
+    }
+    p {
+      color: #595959;
+    }
+    ul {
+      font-family: "Lato", sans-serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px 10px 10px 10px;
+      display: inline;
+      color: black;
+      float: right;
+    }
+    li.nav {
+      float: left;
+      border-right: #f87575
+    }
+    li.nav_item a {
+      color: #6b0606;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    li.nav_item a:hover {
+      color: white;
+    }
+    li.nav:last child {
+      border-right: none;
+    }
+    #home th, #home td {
+      border: 0px;
+      width: 500px;
+    }
+    #home tr {
+      border: 0px;
+      text-align: justify;
+    }
+    footer {
+      font-size: 16px;
+      text-align: center;
+    }
+    a {
+      color: #6b0606;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+    }
+  </style>
+  <nav><ul>
+  <li class='nav_item'><a href="inicio.html">Inicio</a></li>
+  <li class='nav_item'><a href="academics.html">Academicos</a></li>
+  <li class='nav_item'><a href="journalism.html">Periodismo</a></li>
+  <li class='nav_item'><a href="press.html">Prensa</a></li>
+</ul></nav>
+</head>
+<html>
+  <body>
+    <table id="home">
+      <tr><th></th><th></th></tr>
+      <tr><td>
+    <img src="https://nadiabey.com/siteheadshot.jpeg"
+         width="400"
+         height="548" />
+        <br /><a href='https://ko-fi.com/H2H85FFDG' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='Comprarme un cafe a ko-fi.com' /></a></td>
+        <td>
+          <p>Hola! Soy Nadia y estoy una estudiante actual a la universidad Duke en Durham, Carolina del Norte.</p>
+          <p>Estudio biologia y salud global con planes para volver una investigador de salud publica. Me gusta periodismo, comentarios de television y libros, narrativa, codificar y artes visuales.</p>
+          <p>Puedes seguirme en <a href="https://twitter.com/nadiabey" target="_blank">Twitter</a>, buscarme en <a href="https://www.linkedin.com/in/nadia-bey-1b6882149/" target="_blank">LinkedIn</a> y ver a mi <a href="https://github.com/nadiabey" target="_blank">GitHub</a>.</p>
+        <p><a href="index.html">Haz clic aqui</a> para regresar al inicio ingles.</td>
+      </tr>
+    </table>
+  </body>
+  <footer>
+    <footer>
+  <br />
+<br />
+  <p>Alojado por GitHub Pages. © 2021 Nadia Bey</p>
+  <p><script language="javascript">DisplayVisits();</script></p>
+</footer>
+  </footer>
+</html>
