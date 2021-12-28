@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <title>Academics - Nadia Bey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-91FYR6N67Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-91FYR6N67Z');
+</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <script language="javascript">
+    function SetCookie (name,value,expires,path,domain,secure)
+    {
+      document.cookie = name + "=" + escape (value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+    }
+
+    function DeleteCookie (name,path,domain)
+    {
+      if (GetCookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? "; path=" + path : "") +
+          ((domain) ? "; domain=" + domain : "") +
+          "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+      }
+    }
+
+    function GetCookie (name)
+    {
+      var arg = name + "=";
+      var alen = arg.length;
+      var clen = document.cookie.length;
+      var i = 0;
+      while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+          return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+      }
+      return null;
+    }
+    function getCookieVal (offset)
+    {
+      var str = document.cookie.indexOf(";", offset);
+      if(str==-1) str = document.cookie.length;
+      return unescape(document.cookie.substring(offset, str));
+    }
+  </script>
+  <script language="javascript">
+
+  function DisplayVisits()
+ {
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+
+  // Show the number of visits
+      var first = "Esta pagina usa cookies. Es su primera visita.";
+      var rep = "Esta pagina usa cookies. Veces vistos: ";
+      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
+
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+
+  </script>
+  <style>
+    body {
+      background-color: #ffa9a3;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      padding-top: 60px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+    }
+    h1 {
+      color: black;
+    }
+    p {
+      color: #595959;
+    }
+    ul {
+      font-family: "Lato", sans-serif;
+      list-style-type: none;
+      margin-bottom: 10px;
+      margin-left: auto;
+      padding: 0px 10px 10px 10px;
+      display: inline;
+      color: black;
+      float: right;
+    }
+    li {
+      float: left;
+      border-right: 3px solid #f87575;
+    }
+    li a {
+      color: #6b0606;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    li a:hover {
+      color: white;
+    }
+    li:last child {
+      border-right: none;
+    }
+    footer {
+      font-size: 16px;
+      text-align: center;
+    }
+    a {
+      color: #6b0606;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+    }
+  </style>
+  <ul>
+  <li><a href="inicio.html">Inicio</a></li>
+  <li><a href="academicos.html">Academicos</a></li>
+  <li><a href="periodismo.html">Periodismo</a></li>
+  <li><a href="prensa.html">Prensa</a></li>
+</ul>
+</head>
+<html>
+<body>
+  <br />
+  <br />
+  <br />
+  <br />
+<p>Mis actividades a Duke como una <a href="https://sites.duke.edu/dukeusp/2020/06/18/class-of-2023/" target="_blank">Erudita de la Universidad</a> y <a href="https://healthpolicy.duke.edu/people/nadia-bey" target="_blank">Erudita del Duke-Margolis Centro para Politica de Salud</a> son interdisciplinarias. Tengo interes en la salud de humanos, datos, la comunicacion y educacion.</p>
+<h3>Ensenar</h3>
+<p><b>HOUSECS 59, DPS Middle School Outreach — Primavera 2021, Primavera 2022</b></p>
+<p>Enseno un seminario sobre la sociologia de educacion para estudiantes de grados. El seminario tiene un componente de servicio, y los estudiantes hacen trabajo voluntario a una secundaria en Durham. Escribi sobre la experiencia en Twitter durante <a href="https://twitter.com/nadiabey/status/1353359556156395526?s=20" target="_blank">la primavera 2021</a>.</p>
+  <h3>Proyectos</h3>
+  <p><b>HealthCarolina</b></p>
+  <p>En 2021, me puse intrigado en el aceso a la salud y recursos en Carolina del Norte. En el verano, <a href="https://github.com/nadiabey/healthmap" target="_blank">use Python</a> para esconder <a href="https://public.tableau.com/shared/67QYDBBKW?:display_count=n&:origin=viz_share_link" target="_blank">como lejo las hogares estan de los medicos</a> en Condado del Mecklenburg. <a href="https://mcmap.org/qol/" target="_blank">Era inspirado por este herramienta en linea.</a> Presente sobre el aceso <a href="https://www.youtube.com/watch?v=2JYXSWBJtr4" target="_blank">aqui</a>. En el otono, desarrolle un aplicacion para mostrar estadisticas por condado. (<a href="https://github.com/nadiabey/nchealthmap" target="_blank">GitHub</a> | <a href="https://healthcarolina.herokuapp.com/" target="_blank">Heroku</a>)</p>
+  <h3>Investigar</h3>
+<p><b>Practica de Verano al Centro de Duke-Margolis, 2021</b></p>
+<p>Escribi una resena bibliografica en la salud musculoesqueletico y telemedicine para el proyecto de disparidades de salud de Kate B. Reynolds. Presente al <a href="https://www.youtube.com/watch?v=nlirkRsqJyE&list=PLBw-IDgfiPl46wGz7YqW0dC3C-6h3NRd_&index=35&ab_channel=Duke-MargolisStudentVoices" target="_blank">simposio de verano en julio</a>.</p>
+<p><b>Proyecto de Justicia de Vacunas</b></p>
+  <p>Estaba una parte de este equipo que usaron un enfoque de feministas a la historia para desarrollar recomendaciones de politica para la distribucion de vacunas de COVID-19. Nuestro papel puede ser encontrado en <a href="https://www.valuingcare.net/vaccine-equity-research-project" target="_blank">Revaluing Care in the Global Economy</a>.</p>
+<p><b>Lenguaje en Anuncios de Recetas</b></p>
+<p>En 2020, <a href="https://undergraduateresearch.duke.edu/student-stories/nadia-bey-explicit-vs-implicit-language-and-drug-ads" target="_blank">examine la usa de visuales y palabras</a> en anuncios de recetas con el Medical Cognition Lab. Los anuncios pueden afectar la comprehension de las audiencias.</p>
+<h3>Presentaciones</h3>
+<p><b><i>Communicando a Justicia de la Salud</i>, Simposio del Programa de los Eruditos de la Universidad (USP), 13 marzo 2021.</b></p>
+<p>Discuti <a href="https://youtu.be/69JcWmNNlO4" target="_blank">la importancia de la comunicacion de la salud</a> al simposio anual de USP. Los estudiantes de grado, postgrado y vocaciones junta con maestros para discutir un tema anual. El tema de <a href="https://sites.duke.edu/dukeusp/2021/03/11/usp-spring-symposium/" target="_blank">2021</a> era "Wicked Problems/Wicked Solutions".</p>
+</body>
+<footer>
+  <br />
+<br />
+  <p>Alojado por GitHub Pages. © 2021 Nadia Bey</p>
+  <p><script language="javascript">DisplayVisits();</script></p>
+</footer>
+</html>
