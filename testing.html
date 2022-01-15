@@ -1,8 +1,30 @@
-<iframe sandbox='allow-same-origin allow-scripts allow-forms' name='model_frame' src='https://dukemodeling.herokuapp.com' style="width:600px;height:600px;border:none;" title="Duke COVID-19 Model Widget" target='model_frame' scrolling='no'>This widget is not supported by your browser :( Click <a href="https://dukemodeling.herokuapp.com">here</a> to use the interactive.</iframe>
+<iframe sandbox='allow-same-origin allow-scripts allow-forms' name='model_frame' src='https://dukemodeling.herokuapp.com' style="width:600px;height:600px;border:none;" title="Duke COVID-19 Model Widget" target='model_frame' scrolling='no' id='iframe'>This widget is not supported by your browser :( Click <a href="https://dukemodeling.herokuapp.com">here</a> to use the interactive.</iframe>
 <script>
-  window.addEventListener('message', function(e) {
-	if(e.origin !== 'https://nadiabey.com')
-		return;
-	console.log('received message:  ' + e.data, e);
-}, false);
+  window.onload = function(){
+    var iframe = document.getElementById('iframe');
+    iframe = iframe.contentDocument || iframe.contentWindow.document;
+    window.onmessage = function(event){
+      alert(event.data);
+    };
+    iframe.contentWindow.postMessage('', '*');
+    var form = iframe.querySelector('.daily-case-parameters');
+    form.target = 'model_frame';
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      new FormData(form);
+    });
+    form.addEventListener('formdata', function(e){
+      var data = e.formData;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/');
+      xhr.send(data);
+      xhr.onreadystatechange = function(){
+        if (this.readyState == this.HEADERS_RECEIVED){
+          var img = XMLHttpRequest.getResponseHeader('ImageData');
+          var figure = iframe.getElementById('img');
+          figure.src = img;
+        }
+      }
+    });
+  };
 </script>
