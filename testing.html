@@ -1,5 +1,26 @@
 <iframe sandbox='allow-same-origin allow-scripts allow-forms' name='model_frame' src='https://dukemodeling.herokuapp.com' style="width:600px;height:600px;border:none;" title="Duke COVID-19 Model Widget" target='model_frame' scrolling='no' id='iframe'>This widget is not supported by your browser :( Click <a href="https://dukemodeling.herokuapp.com">here</a> to use the interactive.</iframe>
 <script>
+  function createCORSRequest(method, url){
+    var xhr = new XMLHttpRequest();
+    if ("withCredentials" in xhr){
+        xhr.open(method, url, true);
+    } else if (typeof XDomainRequest != "undefined"){
+        xhr = new XDomainRequest();
+        xhr.open(method, url);
+    } else {
+        xhr = null;
+    }
+    return xhr;
+}
+
+var request = createCORSRequest("get", "https://nadiabey.com/");
+if (request){
+    request.onload = function() {
+        // ...
+    };
+    request.onreadystatechange = handler;
+    request.send();
+}
   window.onload = function(){
     var iframe = document.getElementById('iframe');
     iframe = iframe.contentDocument || iframe.contentWindow.document;
