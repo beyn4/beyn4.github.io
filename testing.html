@@ -17,6 +17,7 @@ var request = createCORSRequest("get", "https://nadiabey.com/");
 if (request){
     request.onload = function() {
         var data = request.responseText;
+        console.log(data);
         var heds = JSON.parse(data);
         heds['Access-Control-Allow-Origin'] = '*';
     };
