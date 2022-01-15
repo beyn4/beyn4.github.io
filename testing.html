@@ -16,9 +16,10 @@
 var request = createCORSRequest("get", "https://nadiabey.com/");
 if (request){
     request.onload = function() {
-        // ...
+        var data = request.responseText;
+        var heds = JSON.parse(data);
+        heds['Access-Control-Allow-Origin'] = '*';
     };
-    request.onreadystatechange = handler;
     request.send();
 }
   window.onload = function(){
