@@ -34,7 +34,8 @@ position: relative;
 	.headertext{
 		
 		font-size: 80px;
-  color: #0382A4;
+  color: #001269;
+		font-family: "Dancing Script";
 		position: absolute;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -43,6 +44,8 @@ position: relative;
 		left: 50%;
 		-ms-transform: translate(-50%, -0.001%);
   transform: translate(-50%, -0.001%);
+		animation: typing 5s forwards;
+	  animation-delay: 2s;
 	}
 	@-webkit-keyframes glow {
   from {
@@ -63,15 +66,12 @@ position: relative;
 .main{
 padding: 50px;
   }
-  .name{
+  .intro{
   overflow: hidden;
   width: 0;
   font-size: 50px;
-  font-family: "Dancing Script";
 	  text-align: center;
-	  color: #001269;
-  animation: typing 5s forwards;
-	  animation-delay: 2s;
+	  color: #0382A4;
   }
   @keyframes typing{
   from {width: 0} to {width: 100%}
@@ -99,7 +99,7 @@ padding: 50px;
 		</div>
 	<div class="headertext">Nadia Bey</div>
 </div>
-  <div class="main"><div class="name">Hi, I'm Nadia</div>
+  <div class="main"><div class="intro">Hi!</div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit fermentum condimentum. Aenean facilisis velit at tellus fringilla, vel pellentesque lectus mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Ut dignissim maximus lorem, vitae pharetra lorem. Pellentesque ac metus erat. Donec efficitur nisi vel dui porta malesuada. Donec orci odio, sollicitudin at vulputate et, pharetra non elit. Ut ut diam eget mauris finibus efficitur.</p>
 
 <p>Fusce non augue sapien. Aenean ac libero quis lorem auctor lacinia ut vel ex. Phasellus et tellus blandit, sagittis urna eget, facilisis tortor. Sed rhoncus quis arcu sed dignissim. Nulla venenatis ligula ut erat consequat, in efficitur ex rhoncus. Morbi at ultricies massa, vitae semper est. Suspendisse vulputate dui quis quam blandit, non congue ligula feugiat. Cras commodo magna ex, sit amet tincidunt ex maximus ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent pellentesque pretium interdum. Maecenas congue facilisis mollis.</p>
