@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+  <title>Journalism - Nadia Bey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-91FYR6N67Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-91FYR6N67Z');
+</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <script language="javascript">
+    function SetCookie (name,value,expires,path,domain,secure)
+    {
+      document.cookie = name + "=" + escape (value) +
+        ((expires) ? "; expires=" + expires.toGMTString() : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+    }
+
+    function DeleteCookie (name,path,domain)
+    {
+      if (GetCookie(name)) {
+        document.cookie = name + "=" +
+          ((path) ? "; path=" + path : "") +
+          ((domain) ? "; domain=" + domain : "") +
+          "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+      }
+    }
+
+    function GetCookie (name)
+    {
+      var arg = name + "=";
+      var alen = arg.length;
+      var clen = document.cookie.length;
+      var i = 0;
+      while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+          return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+      }
+      return null;
+    }
+    function getCookieVal (offset)
+    {
+      var str = document.cookie.indexOf(";", offset);
+      if(str==-1) str = document.cookie.length;
+      return unescape(document.cookie.substring(offset, str));
+    }
+  </script>
+  <script language="javascript">
+
+  function DisplayVisits()
+ {
+  // How many visits so far?
+      var numVisits = GetCookie("numVisits");
+      if (numVisits) numVisits = parseInt(numVisits) + 1;
+      else numVisits = 1; // the value for the new cookie
+
+  // Show the number of visits
+      var first = "This page uses cookies. This is your first visit.";
+      var rep = "This page uses cookies. Times visited: ";
+      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
+      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
+
+  // Set the cookie to expire 365 days from now
+      var today = new Date();
+      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
+      SetCookie("numVisits", numVisits, today);
+  }
+
+  </script>
+  <style>
+    body {
+      background-color: #ffa9a3;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      padding-top: 60px;
+      padding-right: 30px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+    }
+    h1 {
+      color: black;
+    }
+    p {
+      color: #595959;
+    }
+    ul {
+      font-family: "Lato", sans-serif;
+      list-style-type: none;
+      margin-bottom: 10px;
+      margin-left: auto;
+      padding: 0px 10px 10px 10px;
+      display: inline;
+      color: black;
+      float: right;
+    }
+    li {
+      float: left;
+      border-right: 3px solid #f87575;
+    }
+    li a {
+      color: #6b0606;
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    li a:hover {
+      color: white;
+    }
+    li:last child {
+      border-right: none;
+    }
+    footer {
+      font-size: 16px;
+      text-align: center;
+    }
+    a {
+      color: #6b0606;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+    }
+  </style>
+  <ul>
+  <li><a href="index.html">About</a></li>
+  <li><a href="academics.html">Academics</a></li>
+  <li><a href="journalism.html">Journalism</a></li>
+  <li><a href="press.html">In the Wild</a></li>
+</ul>
+</head>
+<html>
+<body>
+  <br />
+  <br />
+  <br />
+  <br />
+<p>I started writing for publications in high school, contributing to Issues 6 through 10 of the quarterly student-led zine <a href="https://issuu.com/theacademic" target="_blank">The Academic</a>. I then went on to write entertainment and current event articles for <a href="http://affinitymagazine.us/about-us" target="_blank">Affinity Magazine</a>, where I currently act as <a href="http://culture.affinitymagazine.us/author/simplynadia" target="_blank">Books Editor</a>. At Duke, I am the managing editor of the independent student newspaper, <a href="https://dukechronicle.com/staff/nadia-bey" target="_blank">The Chronicle</a>, and I was previously co-president of Duke's chapter of <a href="https://hercampus.com/author/nadia-bey" target="_blank">Her Campus</a>. I have also written for the <a href="https://www.jyi.org/nadia-bey" target="_blank">Journal for Young Investigators</a> and other publications.</p>
+  <p>I am a member of Investigative Reporters and Editors and the National Association of Black Journalists.</p>
+<h2>Selected Works</h2>
+<p><h3>Reporting</h3></p>
+  <p><a href="https://www.dukechronicle.com/article/2021/10/300-swift-apartments-work-order-maintenance-issues-price-rent-bedroom-off-campus-duke-university-floors-falling" target="_blank">'Nebulous and poorly attended to': Swift residents lament recurring maintenance issues</a>. <i>Duke Chronicle</i>, October 22, 2021.</p>
+  <p><a href="https://www.dukechronicle.com/article/2021/03/duke-university-students-respond-new-restrictions" target="_blank">Students respond with anxiety, flock to buy food as news spreads of new restrictions.</a> <i>Duke Chronicle</i>, March 13, 2021.</p>
+<p><a href="https://www.dukechronicle.com/article/2021/01/duke-university-danny-lee-winstead-public-safety-shooting-aftermath" target="_blank">The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</a>. <i>Duke Chronicle</i>, January 25, 2021.</p>
+<p><a href="https://www.dukechronicle.com/article/2020/09/duke-university-title-ix-changes-questions-transparency-public-comment" target="_blank">Title IX changes raise questions about transparency.</a> <i>Duke Chronicle</i>, September 11, 2020.</p>
+<p><a href="https://www.dukechronicle.com/article/2020/04/coronavirus-pandemic-graduate-student-increased-summer-pay" target="_blank">Coronavirus pandemic adds urgency to graduate students' fight for increased summer pay</a>. <i>Duke Chronicle</i>, April 22, 2020.</p>
+<p><h3>Health & Science</h3></p>
+<p><a href="https://www.jyi.org/2021-october/2021/10/27/lets-get-this-bread-sourdough-may-reduce-immune-response" target="_blank">Let's Get This Bread: Sourdough May Reduce Immune Response.</a> <i>Journal for Young Investigators</i>, October 27, 2021.</p>
+<p><a href="https://www.jyi.org/2020-july/2020/7/1/new-drug-lowers-cortisol-in-cushings-disease-patients" target="_blank">New Drug Lowers Cortisol in Cushing's Disease Patients.</a> <i>Journal for Young Investigators</i>, July 1, 2020.</p>
+<p><a href="https://www.dukechronicle.com/article/2019/09/nc-health-care-reform-duke-changes" target="_blank">NC health care reform has begun, and Duke is at the forefront of the changes.</a> <i>Duke Chronicle</i>, September 16, 2019.</p>
+<p><a href="can%20art%20help%20you%20learn.pdf" target="_blank">Can Art Help You Learn?</a> <i>The Academic</i>, Issue 6, May 1, 2017.</p>
+<p><h3>Pop Culture</h3></p>
+<p><a href="http://culture.affinitymagazine.us/a-new-kind-of-hope-a-review-of-epoca-the-river-of-sand/" target="_blank">A New Kind of Hope: A Review of EPOCA: The River of Sand</a>. <i>Affinity Magazine</i>, December 15, 2020.</p>
+<p><a href="https://medium.com/@nadiabey/freddie-lounds-represents-how-we-view-journalists-ecb4027723c0" target="_blank">Freddie Lounds Represents How We View Journalists</a>. <i>Medium</i>, December 25, 2019.</p>
+<p><a href="http://culture.affinitymagazine.us/the-new-charmed-reboot-differs-from-the-original-but-shows-potential-for-growth/" target="_blank">The 'Charmed' Reboot Differs From the Original, But Shows Potential For Growth</a>. <i>Affinity Magazine</i>, October 17, 2018.</p>
+<p><h3>Essays</h3></p>
+<p><a href="https://www.hercampus.com/school/duke/free-condoms-and-menstrual-products-shouldnt-be-mutually-exclusive" target="_blank">Free Condoms and Menstrual Products Shouldn't Be Mutually Exclusive</a>. <i>Her Campus</i>, December 1, 2020.</p>
+<p><a href="https://dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e" target="_blank">Navigating My Care in a Pandemic</a>. <i>Duke Center for Global Women's Health Technologies</i>, October 21, 2020.</p>
+<p><a href="inadequacy.pdf" target="_blank">Dealing With Feelings of Inadequacy</a>. <i>The Academic</i>, Issue 9, February 1, 2018.</p>
+<h3>Multimedia</h3>
+<p><a href="https://www.dukechronicle.com/article/2021/09/duke-university-bridging-the-gap-the-chronicle-representation-diversity-podcast-coverage" target="_blank">Bridging the Gap Episode 5: Representation and Coverage</a>. <i>Duke Chronicle</i>, Podcast, September 2, 2021.</p>
+<p><a href="https://www.dukechronicle.com/article/2021/06/duke-university-covid-coronavirus-vaccine-survey-results-students" target="_blank">Here are the results of The Chronicle's COVID-19 vaccine experience survey</a>. <i>Duke Chronicle</i>, Interactive/Data, June 10, 2021.</p>
+<p><a href="https://anchor.fm/duke-scohp/episodes/Senator-Murdock-The-Future-of-Health-Policy-epcb07" target="_blank">Senator Murdock: The Future of Health Policy</a>. <i>The Scope</i>, Podcast, January 25, 2021.</p>
+<p><i>I've also made multiple appearances on</i> The Chronicle's <i>news podcast, <b>Duke Week.</b> <a href="https://linkmix.co/7102659" target="_blank">Here are all of those appearances</a> as of November 13, 2021.</i></p></body>
+<footer>
+  <br />
+<br />
+  <p>Hosted by GitHub Pages. © 2021 Nadia Bey</p>
+  <p><script language="javascript">DisplayVisits();</script></p>
+</footer>
+</html>
