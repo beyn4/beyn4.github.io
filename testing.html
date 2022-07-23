@@ -1,53 +1,36 @@
-<iframe sandbox='allow-same-origin allow-scripts allow-forms' name='model_frame' src='https://dukemodeling.herokuapp.com' style="width:600px;height:600px;border:none;" title="Duke COVID-19 Model Widget" target='model_frame' scrolling='no' id='iframe'>This widget is not supported by your browser :( Click <a href="https://dukemodeling.herokuapp.com">here</a> to use the interactive.</iframe>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.top{
+background-image: url('https://brianstrickland.zenfolio.com/img/s/v-10/p791248284-2.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+position: fixed;
+display: flex;
+transition: 0.2s;
+}
+.navbar{
+position: relative;
+}
+</style>
 <script>
-  function createCORSRequest(method, url){
-    var xhr = new XMLHttpRequest();
-    if ("withCredentials" in xhr){
-        xhr.open(method, url, true);
-    } else if (typeof XDomainRequest != "undefined"){
-        xhr = new XDomainRequest();
-        xhr.open(method, url);
-    } else {
-        xhr = null;
-    }
-    return xhr;
-}
+window.onscroll = function() {scrollFunction()};
 
-var request = createCORSRequest("get", "https://nadiabey.com/");
-if (request){
-    request.onload = function() {
-        var data = request.responseText;
-        console.log(data);
-        var heds = JSON.parse(data);
-        heds['Access-Control-Allow-Origin'] = '*';
-    };
-    request.send();
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "30px";
+  } else {
+    document.getElementById("navbar").style.fontSize = "90px";
+  }
 }
-  window.onload = function(){
-    var iframe = document.getElementById('iframe');
-    iframe = iframe.contentDocument || iframe.contentWindow.document;
-    window.onmessage = function(event){
-      alert(event.data);
-    };
-    iframe.contentWindow.postMessage('', '*');
-    var form = iframe.querySelector('.daily-case-parameters');
-    form.target = 'model_frame';
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      new FormData(form);
-    });
-    form.addEventListener('formdata', function(e){
-      var data = e.formData;
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '/');
-      xhr.send(data);
-      xhr.onreadystatechange = function(){
-        if (this.readyState == this.HEADERS_RECEIVED){
-          var img = XMLHttpRequest.getResponseHeader('ImageData');
-          var figure = iframe.getElementById('img');
-          figure.src = img;
-        }
-      }
-    });
-  };
 </script>
+</head>
+<body>
+<div class="top">
+<div class="navbar">About | Academics | Journalism</div>
+</div>
+</body>
+</html>
