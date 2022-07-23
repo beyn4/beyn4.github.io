@@ -1,1 +1,82 @@
-
+<!DOCTYPE html>
+<head>
+  <title>Nadia Bey</title>
+  <style>
+    body {
+      margin: 50px;
+      background-color: white;
+    }
+     ul {
+      font-family: "Lato", sans-serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px 10px 10px 10px;
+      display: inline;
+      color: black;
+      float: right;
+    }
+    li.nav {
+      float: left;
+      border-right: #f87575
+    }
+    li.nav_item a {
+      color: #03708D;
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    li.nav_item a:hover {
+      color: #001269;
+    }
+    li.nav:last child {
+      border-right: none;
+    }
+    #home th, #home td {
+      border: 0px;
+      width: 500px;
+    }
+    #home tr {
+      border: 0px;
+      text-align: justify;
+    }
+    footer {
+      font-size: 16px;
+      text-align: center;
+    }
+    a {
+      color: #6b0606;
+      text-decoration: none;
+    }
+    a:hover {
+      color: white;
+    }
+  </style>
+  <nav><ul>
+  <li class='nav_item'><a href="index.html">Home</a></li>
+  <li class='nav_item'><a href="about.html">About</a></li>
+  <li class='nav_item'><a href="writing.html">Writing</a></li>
+  <li class='nav_item'><a href="projects.html">Projects</a></li>
+  </ul></nav>
+</head>
+<body>
+  <table id="home">
+      <tr><th></th><th></th></tr>
+      <tr><td>
+      <img src="https://nadiabey.com/siteheadshot.jpeg" width="400" height="548" /></td>
+        <td><p>I'm a senior at Duke University studying biology and global health with a minor in computational biology. I'm a fourth-year University Scholar and second-year Margolis Scholar.</p></td></tr>
+  </table>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+  kofiWidgetOverlay.draw('nadiabey', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+</body>
+<footer>
+  <p>Hosted by GitHub Pages. © 2021-2022 Nadia Bey</p>
+</footer>
+</html>
