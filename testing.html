@@ -50,19 +50,18 @@ position: relative;
     text-shadow: 0 0 20px #fff, 0 0 30px #32D4FF, 0 0 40px #32D4FF, 0 0 50px #32D4FF, 0 0 60px #32D4FF, 0 0 70px #32D4FF, 0 0 80px #32D4FF;
   }
 }
-	@blVal: 8px;
 
 .blur{
-  -webkit-filter: blur(@blVal);
-  -moz-filter: blur(@blVal);
-  -o-filter: blur(@blVal);
-  -ms-filter: blur(@blVal);
-  filter: blur(@blVal);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
 }
 </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>$(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 200) {
         $(".top").addClass("blur");
 	    $(".navbar").css('background-color', 'white');
     } else {
@@ -72,8 +71,9 @@ position: relative;
 		});</script>
 </head>
 <body>
+<div class="navbar">Home | About | Writing | Projects</div>
 <div class="top">
-	<div class="navbar">Home | About | Writing | Projects</div>
+<div class="navbar">Home | About | Writing | Projects</div>
 	<div class="headertext">Nadia Bey</div>
 </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit fermentum condimentum. Aenean facilisis velit at tellus fringilla, vel pellentesque lectus mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Ut dignissim maximus lorem, vitae pharetra lorem. Pellentesque ac metus erat. Donec efficitur nisi vel dui porta malesuada. Donec orci odio, sollicitudin at vulputate et, pharetra non elit. Ut ut diam eget mauris finibus efficitur.</p>
