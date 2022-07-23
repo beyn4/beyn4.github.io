@@ -30,6 +30,7 @@ position: relative;
   animation: glow 1s ease-in-out infinite alternate;
 		top: 50%;
 		left: 50%;
+		width: 100%;
 		height: 500px;
 	}
 	@-webkit-keyframes headertext {
@@ -40,7 +41,23 @@ position: relative;
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+	@blVal: 8px;
+
+.blur{
+  -webkit-filter: blur(@blVal);
+  -moz-filter: blur(@blVal);
+  -o-filter: blur(@blVal);
+  -ms-filter: blur(@blVal);
+  filter: blur(@blVal);
+}
 </style>
+	<script>$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $(".hero").addClass("blur");
+    } else {
+        $(".hero").removeClass("blur");
+    }
+		});</script>
 </head>
 <body>
 <div class="top">
