@@ -31,15 +31,20 @@ position: relative;
 	display: flex;
 	width: 100%;
 }
+a{
+color: #03708D;
+text-decoration: none;
+padding: 5px;}
+a:hover{
+color: #001269;}
 	.headertext{
-		width: 0;
 		font-size: 80px;
   color: #001269;
 		font-family: "Dancing Script";
 		position: absolute;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate typing 5s forwards;
+  animation: glow 1s ease-in-out infinite alternate ;
 		top: 50%;
 		left: 50%;
 		-ms-transform: translate(-50%, -0.001%);
@@ -66,14 +71,19 @@ padding: 50px;
   }
   .intro{
   overflow: hidden;
-  width: 100%;
+  width: 0;
   font-size: 50px;
 	  text-align: center;
 	  color: #0382A4;
+      animation: typing 3s forwards;
   }
   @keyframes typing{
   from {width: 0} to {width: 100%}
   }
+  footer{
+  font-size: 16px;
+      text-align: center;
+      margin: 0px 0px 10px 0px;}
 </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>$(window).scroll(function() {
@@ -89,11 +99,11 @@ padding: 50px;
 </head>
 <body>
 	<div class="navbar">
-		<a href="/index.html">HOME</a> | ABOUT | WRITING | PROJECTS
+		<a href="/index.html">HOME</a>  <a href="/about.html">ABOUT</a>  <a href="/writing.html">WRITING</a>  <a href="/projects.html">PROJECTS</a>
 		</div>
 <div class="top">
 	<div class="navbar">
-			<a href="/index.html">HOME</a> | ABOUT | WRITING | PROJECTS
+			<a href="/index.html">HOME</a>  <a href="/about.html">ABOUT</a>  <a href="/writing.html">WRITING</a>  <a href="/projects.html">PROJECTS</a>
 		</div>
 	<div class="headertext">Nadia Bey</div>
 </div>
@@ -118,7 +128,6 @@ padding: 50px;
 
 </body>
 	<footer>
-  <br />
-<br />
-		<p>Hosted by GitHub Pages. © 2022 Nadia Bey</p></footer>
+		<p>Hosted by GitHub Pages. © 2021-2022 Nadia Bey</p>
+    </footer>
 </html>
