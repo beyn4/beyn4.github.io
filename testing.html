@@ -13,35 +13,37 @@ background-repeat: no-repeat;
 height: 500px;
 position: relative;
 	display: flex;
-transition: 0.2s;
 }
-  .top .blur{
-    background-image: url('https://nadiabey.com/844A2140.jpg');
-    background-size: cover;
-    -webkit-filter: blur(10px);
-  	-moz-filter: blur(10px);
-  	-o-filter: blur(10px);
-  	-ms-filter: blur(10px);
-  	filter: blur(10px);
-
-	height: 100%;
-	opacity: 0;
-  }
 .navbar{
-  float: right;
+  text-align: right;
   font-size: 20px;
   color: #696969;
 	position: fixed;
 	width: 100%;
-	background-image: url('https://nadiabey.com/844A2140.jpg');
-    background-size: cover;
-	background-color: white;
 }
+	.headertext{
+		font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+		
+		@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+	}
 </style>
 </head>
 <body>
 <div class="top">
   <div class="navbar">About | Academics | Journalism</div>
+	<div class="headertext">Nadia Bey</div>
 </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit fermentum condimentum. Aenean facilisis velit at tellus fringilla, vel pellentesque lectus mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Ut dignissim maximus lorem, vitae pharetra lorem. Pellentesque ac metus erat. Donec efficitur nisi vel dui porta malesuada. Donec orci odio, sollicitudin at vulputate et, pharetra non elit. Ut ut diam eget mauris finibus efficitur.</p>
 
