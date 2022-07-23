@@ -35,15 +35,15 @@ position: relative;
 		font-size: 80px;
   color: #0382A4;
 		position: absolute;
-  -webkit-animation: headertext 1s ease-in-out infinite alternate;
-  -moz-animation: headertext 1s ease-in-out infinite alternate;
-  animation: headertext 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 		top: 50%;
 		left: 50%;
 		-ms-transform: translate(-50%, -0.1%);
   transform: translate(-50%, -0.1%);
 	}
-	@-webkit-keyframes headertext {
+	@-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6DE0FF, 0 0 40px #6DE0FF, 0 0 50px #6DE0FF, 0 0 60px #6DE0FF, 0 0 70px #6DE0FF;
   }
@@ -61,6 +61,15 @@ position: relative;
 }
 .main{
 padding: 50px;
+  }
+  .name{
+  overflow: hidden;
+  width: 0;
+  font-size: 50px;
+  animation: typing 1s forwards;
+  }
+  @keyframes typing{
+  from {width: 0} to {width: 100%}
   }
 </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -85,7 +94,8 @@ padding: 50px;
 		</div>
 	<div class="headertext">Nadia Bey</div>
 </div>
-  <div class="main"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit fermentum condimentum. Aenean facilisis velit at tellus fringilla, vel pellentesque lectus mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Ut dignissim maximus lorem, vitae pharetra lorem. Pellentesque ac metus erat. Donec efficitur nisi vel dui porta malesuada. Donec orci odio, sollicitudin at vulputate et, pharetra non elit. Ut ut diam eget mauris finibus efficitur.</p>
+  <div class="main"><div class="name">Hi, I'm Nadia</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit fermentum condimentum. Aenean facilisis velit at tellus fringilla, vel pellentesque lectus mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Ut dignissim maximus lorem, vitae pharetra lorem. Pellentesque ac metus erat. Donec efficitur nisi vel dui porta malesuada. Donec orci odio, sollicitudin at vulputate et, pharetra non elit. Ut ut diam eget mauris finibus efficitur.</p>
 
 <p>Fusce non augue sapien. Aenean ac libero quis lorem auctor lacinia ut vel ex. Phasellus et tellus blandit, sagittis urna eget, facilisis tortor. Sed rhoncus quis arcu sed dignissim. Nulla venenatis ligula ut erat consequat, in efficitur ex rhoncus. Morbi at ultricies massa, vitae semper est. Suspendisse vulputate dui quis quam blandit, non congue ligula feugiat. Cras commodo magna ex, sit amet tincidunt ex maximus ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent pellentesque pretium interdum. Maecenas congue facilisis mollis.</p>
 
