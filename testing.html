@@ -15,6 +15,7 @@ transition: 0.2s;
 }
 .navbar{
   text-align: right;
+  
   position: relative;
 }
 </style>
@@ -23,7 +24,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.fontSize = "30px";
+    document.getElementById("top").style.filter = blur(8px);
+    document.getElementById("top").style.-webkit-filter = blur(8px);
   } else {
     document.getElementById("navbar").style.fontSize = "90px";
   }
