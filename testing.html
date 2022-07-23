@@ -13,23 +13,33 @@ position: relative;
 display: flex;
 transition: 0.2s;
 }
+  .top .blur{
+    background-image: url('https://nadiabey.com/844A2140.jpg');
+    background-size: cover;
+    -webkit-filter: blur(10px);
+  	-moz-filter: blur(10px);
+  	-o-filter: blur(10px);
+  	-ms-filter: blur(10px);
+  	filter: blur(10px);
+
+	height: 100%;
+	opacity: 0;
+  }
 .navbar{
-  text-align: right;
+  float: right;
   font-size: 20px;
   color: #696969;
 }
 </style>
 <script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("top").style.filter = blur(8px);
-    document.getElementById("top").style.-webkit-filter = blur(8px);
-  } else {
-    document.getElementById("navbar").style.fontSize = "90px";
-  }
-}
+$(window).scroll(function() { 
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // scroll value and opacity
+    opacityVal = (s / 240);
+    // opacity value 0% to 100%
+    $('.blur').css('opacity', opacityVal);
+});
 </script>
 </head>
 <body>
