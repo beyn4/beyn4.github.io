@@ -51,6 +51,42 @@ color: #001269;}
 	  .main{
 		  margin: 20px 100px 20px 100px;
 	  }
+	  .container {
+  overflow: hidden;
+}
+
+.filter {
+  float: center;
+  color: #000000;
+  width: 300px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #0382A4;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #001269;
+}
+
+.btn.active {
+  background-color: #001269;
+  color: white;
+}
 		  
   </style>
 </head>
@@ -58,11 +94,35 @@ color: #001269;}
 	<div class="navbar">
 		<a href="/index.html">HOME</a>  <a href="/about.html">ABOUT</a>  <a href="/writing.html">WRITING</a>  <a href="/projects.html">PROJECTS</a>
 	</div>
+	<div class="main">
+		<div id="buttons">
+			  <button class="btn active" onclick="filterSelection('all')">Reset</button>
+  			<button class="btn" onclick="filterSelection('research')">Research</button>
+  			<button class="btn" onclick="filterSelection('journalism')">Journalism</button>
+  			<button class="btn" onclick="filterSelection('investigation')">Investigations</button>
+  			<button class="btn" onclick="filterSelection('feature')">Features</button>
+			<button class="btn" onclick="filterSelection('hst')">Health, Science & Tech</button>
+			<button class="btn" onclick="filterSelection('data')">Data</button>
+			<button class="btn" onclick="filterSelection('essay')">Essays</button>
+		</div>
+
+		<div class="story-container">
+			<div class="filter research"><b>Ensuring Telehealth Access For North Carolina Farmworkers</b><br/>April 26, 2022<br/><i><a href="https://www.healthaffairs.org/do/10.1377/forefront.20220422.227909">Health Affairs Forefront</a></i></div>
+			<div class="filter journalism investigation"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/>Jan. 25, 2021<br/><i><a href="https://www.dukechronicle.com/article/2021/01/duke-university-danny-lee-winstead-public-safety-shooting-aftermath">Duke Chronicle</a></i></div>
+			<div class="filter journalism feature"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022</br><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div>
+			<div class="filter journalism hst"><b>How much do educators want to fight ‘period poverty’ at NC schools? Here are some clues</b><br/>June 16, 2022<br/><i><a href="https://www.charlotteobserver.com/news/state/north-carolina/article262532362.html">Charlotte Observer</a></i></div>
+			<div class="filter journalism hst"><b>House Bill 96 facilitates greater access to birth control, HIV drugs, but implementation timeline remains unclear</b><br/>Feb. 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/02/house-bill-96-hb-north-carolina-birth-control-duke-campus-center-pharmacy-prescriptions">Duke Chronicle</a></i></div>
+			<div class="filter journalism hst"><b>What is Meta Pixel, the code detected on health system websites in NC and beyond?</b><br/>June 20, 2022<br/><i><a href="https://www.charlotteobserver.com/news/local/article262649112.html">Charlotte Observer</a></i></div>
+			<div class="filter journalism hst data"><b>Here are the results of The Chronicle's COVID-19 vaccine experience survey</b><br/>June 10, 2021<br/><i><a href="https://www.dukechronicle.com/article/2021/06/duke-university-covid-coronavirus-vaccine-survey-results-students">Duke Chronicle</a></i><div>
+			<div class="filter essay"</div><b>Navigating My Care in a Pandemic</b><br />Oct. 21, 2020<br/><i><a href="dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e">Duke Center for Global Women's Health Technologies Blog</a></i></div>
+		</div>
   <center><p>This page is under construction - please see the <a href="/journalism.html">old version</a> of this page in the meantime.</p>
+	  <p><b>Bylines in:</b></p>
   <p><a href="http://affinitymagazine.us/author/simplynadia"><img src="/affnews.png" /></a><a href="http://culture.affinitymagazine.us/author/simplynadia"><img src="/affculture.png" /></a><a href="https://www.dukechronicle.com/staff/nadia-bey"><img src="/chronlogo.png" /></a><a href="https://www.hercampus.com/author/nadia-bey/"><img src="/hc logo.png" /></a></p>
 <p><a href="https://www.charlotteobserver.com/profile/261574432"><img src="/observerlogo.png" /></a><a href="https://www.newsobserver.com/profile/261574432"><img src="/nao logo.png" /></a><a href="https://www.heraldsun.com/profile/261574432"><img src="/herald logo.png" /></a></p>
 <p><a href="https://ncinsider.com"><img src="/insider logo.png" /></a><a href="https://www.healthaffairs.org/do/10.1377/hauthor20220420.528871/full/"><img src="/ha logo.png" /></a></p></center>
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+	</div>
+		<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
   <script>
   kofiWidgetOverlay.draw('nadiabey', {
     'type': 'floating-chat',
