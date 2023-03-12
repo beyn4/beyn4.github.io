@@ -46,8 +46,8 @@
 
     .filter {
       color: #000000;
-      /*width:350px;*/
       line-height: normal;
+      flex: 200px;
       text-align: center;
       margin: 2px;
       display: none; /* Hidden by default */
@@ -57,9 +57,12 @@
   .show {
     display: block;
   }
-	  .container{
-		  overflow: hidden;
-	  }
+.container{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
 
 /* Style the buttons */
   .btn {
@@ -99,20 +102,18 @@
 			<button class="btn" onclick="filterSelection('data')">Data</button>
 			<button class="btn" onclick="filterSelection('essay')">Essays</button>
 		</div>
-        <table>
 	    <div class="container">
-			<tr><td><div class="filter research"><b>Ensuring Telehealth Access For North Carolina Farmworkers</b><br/>April 26, 2022<br/><i><a href="https://www.healthaffairs.org/do/10.1377/forefront.20220422.227909">Health Affairs Forefront</a></i></div></td>
-            <td><div class="filter journalism investigation"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/>Jan. 25, 2021<br/><i><a href="https://www.dukechronicle.com/article/2021/01/duke-university-danny-lee-winstead-public-safety-shooting-aftermath">Duke Chronicle</a></i></div></td> 
-            <td><div class="filter journalism feature"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div></td></tr>
-			<tr><td><div class="filter journalism hst investigation"><b>Why accuracy of NC provider directories matters</b><br/>Aug. 4, 2022<br/><i><a href="/NC%20provider%20directories%20-%20Charlotte%20Observer.pdf">The News & Observer</a></i></div></td>
-	    <td><div class="filter journalism hst"><b>House Bill 96 facilitates greater access to birth control, HIV drugs, but implementation timeline remains unclear</b><br/>Feb. 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/02/house-bill-96-hb-north-carolina-birth-control-duke-campus-center-pharmacy-prescriptions">Duke Chronicle</a></i></div></td>
-	    <td><div class="filter journalism hst"><b>North Carolina tests wastewater for signs of monkeypox</b><br/>July 27, 2022<br/><i><a href="/Mpox%20wastewater%20-%20Charlotte%20Observer.pdf">Charlotte Observer</a></i></div></td></tr>
-			<tr><td><div class="filter journalism data"><b>Where do Duke students go to continue their education post-graduation?</b><br/>Oct. 13, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/10/duke-university-postgrad-graduate-schools-phd-where-do-duke-students-continue-post-undergraduate-education-degrees-pratt-trinity">Duke Chronicle</a></i></div></td>
-	    <td><div class="filter essay"><b>Navigating My Care in a Pandemic</b><br />Oct. 21, 2020<br/><i><a href="https://dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e">Duke Center for Global Women's Health Technologies Blog</a></i></div></td>
-        <td><div class="filter journalism hst"><b>Let’s Get This Bread: Sourdough May Reduce Immune Response</b><br />Oct. 27, 2021<br/><i><a href="https://www.jyi.org/2021-october/2021/10/27/lets-get-this-bread-sourdough-may-reduce-immune-response">Journal of Young Investigators</a></i></div></td></tr>
-		    <tr><td><div class="filter hst"><b>What's Inside You: The Connection Between Gut Flora and Mental Health</b><br/>May 1, 2018<br/><i><a href="https://issuu.com/theacademic/docs/issue_10/24">The Academic</a></i></td><td><div class="filter journalism investigation data"><b>Duke Student Affairs sees 200 staff departures in two years, student groups impacted by staffing shortages and turnovers</b><br/>Jan. 17. 2023<br/><i><a href="https://www.dukechronicle.com/article/2023/01/duke-student-affairs-sees-200-staff-departures-in-two-years-student-groups-impacted-by-staffing-shortages-and-turnovers-higher-education">Duke Chronicle</a></i></div></td></tr>
+			<div class="filter research"><b>Ensuring Telehealth Access For North Carolina Farmworkers</b><br/>April 26, 2022<br/><i><a href="https://www.healthaffairs.org/do/10.1377/forefront.20220422.227909">Health Affairs Forefront</a></i></div>
+            <div class="filter journalism investigation"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/>Jan. 25, 2021<br/><i><a href="https://www.dukechronicle.com/article/2021/01/duke-university-danny-lee-winstead-public-safety-shooting-aftermath">Duke Chronicle</a></i></div>
+            <div class="filter journalism feature"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div>
+			<div class="filter journalism hst investigation"><b>Why accuracy of NC provider directories matters</b><br/>Aug. 4, 2022<br/><i><a href="/NC%20provider%20directories%20-%20Charlotte%20Observer.pdf">The News & Observer</a></i></div>
+	    <div class="filter journalism hst"><b>House Bill 96 facilitates greater access to birth control, HIV drugs, but implementation timeline remains unclear</b><br/>Feb. 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/02/house-bill-96-hb-north-carolina-birth-control-duke-campus-center-pharmacy-prescriptions">Duke Chronicle</a></i></div>
+	    <div class="filter journalism hst"><b>North Carolina tests wastewater for signs of monkeypox</b><br/>July 27, 2022<br/><i><a href="/Mpox%20wastewater%20-%20Charlotte%20Observer.pdf">Charlotte Observer</a></i></div>
+			<div class="filter journalism data"><b>Where do Duke students go to continue their education post-graduation?</b><br/>Oct. 13, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/10/duke-university-postgrad-graduate-schools-phd-where-do-duke-students-continue-post-undergraduate-education-degrees-pratt-trinity">Duke Chronicle</a></i></div>
+	    <div class="filter essay"><b>Navigating My Care in a Pandemic</b><br />Oct. 21, 2020<br/><i><a href="https://dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e">Duke Center for Global Women's Health Technologies Blog</a></i></div>
+        <div class="filter journalism hst"><b>Let’s Get This Bread: Sourdough May Reduce Immune Response</b><br />Oct. 27, 2021<br/><i><a href="https://www.jyi.org/2021-october/2021/10/27/lets-get-this-bread-sourdough-may-reduce-immune-response">Journal of Young Investigators</a></i></div>
+		    <div class="filter hst"><b>What's Inside You: The Connection Between Gut Flora and Mental Health</b><br/>May 1, 2018<br/><i><a href="https://issuu.com/theacademic/docs/issue_10/24">The Academic</a></i></div><div class="filter journalism investigation data"><b>Duke Student Affairs sees 200 staff departures in two years, student groups impacted by staffing shortages and turnovers</b><br/>Jan. 17. 2023<br/><i><a href="https://www.dukechronicle.com/article/2023/01/duke-student-affairs-sees-200-staff-departures-in-two-years-student-groups-impacted-by-staffing-shortages-and-turnovers-higher-education">Duke Chronicle</a></i></div>
 	    </div>
-        </table>
 	<br />
 	<p><i>If you're interested in commissioning research or reporting, reach out at <b>beynadiaa [at] gmail [dot] com</b>.</i></p>
 		<br />
