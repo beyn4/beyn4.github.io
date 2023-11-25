@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Nadia Bey</title>
+	<link rel="icon" type="image/x-icon" href="/nbfavicon.png">
   <style>
     html, body {
       margin: 0;
@@ -63,8 +64,8 @@ color: #001269;}
       <tr><td>
 	      <center><img src="https://nadiabey.com/siteheadshot.jpeg" width="400" height="548" /></center></td>
         <td>
-		<div class="intro">Hi!</div>
-		<p>I am an alumna of Duke University with a degree in biology and global health and a minor in computational biology. At Duke, I was a <a href="https://usp.duke.edu">University Scholar</a>, <a href="https://healthpolicy.duke.edu/people/nadia-bey-babs-23">Margolis Scholar</a> and <a href="https://questbridge.org">QuestBridge Scholar</a>. I graduated with distinction with a thesis titled <a href="https://dukespace.lib.duke.edu/dspace/handle/10161/27056"><i>Telemedicine utilization by North Carolina farmworkers: a content analysis</i></a>. I am now pursuing an MPH in health policy.</p>
+		<div class="intro">About Nadia</div>
+		<p>I am an alumna of Duke University with a degree in biology and global health and a minor in computational biology. At Duke, I was a <a href="https://usp.duke.edu">University Scholar</a>, <a href="https://healthpolicy.duke.edu/people/nadia-bey-babs-23">Margolis Scholar</a> and <a href="https://questbridge.org">QuestBridge Scholar</a>. I graduated with distinction with a thesis titled <a href="https://dukespace.lib.duke.edu/dspace/handle/10161/27056"><i>Telemedicine utilization by North Carolina farmworkers: a content analysis</i></a>. I am now pursuing an MPH in health policy at George Washington University.</p>
 	      <p>During my tenure at Duke, I researched the <a href="https://undergraduateresearch.duke.edu/student-stories/explicit-vs-implicit-language-and-drug-ads">use of language in prescription drug ads</a>, <a href="https://www.valuingcare.net/vaccine-equity-research-project">equitable vaccine distribution</a>, telehealth use by <a href="https://www.youtube.com/watch?v=z0WhAXVREPM&t=43s">farmworkers</a> and <a href="https://www.youtube.com/watch?v=nlirkRsqJyE&list=PLBw-IDgfiPl46wGz7YqW0dC3C-6h3NRd_&index=36&ab_channel=Duke-MargolisStudentVoices">people with musculoskeletal conditions</a>, and social determinants of health in North Carolina's Triangle region. I also co-taught "Durham Middle School Outreach," an undergraduate service-learning seminar on education sociology, for two years.</p>
 	      <p>I served as managing editor of The Chronicle, Duke's student newspaper. My work there has been recognized by the <a href="https://ncopengov.com/duke-chronicle-journalists-win-frank-barrows-award-for-series-use-of-force-by-duke-university-police/">North Carolina Open Government Coalition</a> and the Associated Collegiate Press. I was also co-president of Duke's chapter of <a href="https://hercampus.com/school/duke">Her Campus</a>.</p> 
 		<p>In summer 2022, I interned on the North Carolina investigations desk for McClatchy News and covered health and policy for The Charlotte Observer. I'm a <a href="https://www.propublica.org/article/propublica-emerging-reporters-2022">2022-23 ProPublica Emerging Reporter fellow</a> and was a 2021 recipient of the organization's <a href="https://www.propublica.org/article/meet-propublicas-2021-diversity-scholarship-recipients">Diversity Scholarship.</a> I've been quoted in the <a href="https://www.nytimes.com/live/2021/03/14/world/covid-19-coronavirus#a-frat-party-fueled-outbreak-prompts-duke-to-quarantine-thousands-of-students">New York Times</a> and had my reporting cited in the <a href="https://www.washingtonpost.com/education/2021/03/14/duke-university-covid-quarantine/">Washington Post</a>.
@@ -82,9 +83,13 @@ color: #001269;}
 </script>
 </body>
 <footer>
-		<p>Hosted by GitHub Pages. © 2021-2022 Nadia Bey</p>
-		<p><a href="https://github.com/nadiabey"><img src="/bluegithub.png" width="50px" height="50px" /></a> <a href="https://www.linkedin.com/in/nadia-bey-1b6882149/"><img src="/linkedin.png" width="50px" height="50px" /></a> <a href="https://twitter.com/nadiabey"><img src="/twitter.png" width="50px" height="50px" /></a> <a href="https://www.youtube.com/channel/UCraoOAE1En3wu__Vg-TFEYg"><img src="/blueyt.png" width="50px" height="50px" /></a></p>
+		<p>Hosted by GitHub Pages. © Nadia Bey</p>
+		<p><a href="https://github.com/nadiabey"><img src="/bluegithub.png" width="50px" height="50px" /></a> <a href="https://www.linkedin.com/in/beynadia/"><img src="/linkedin.png" width="50px" height="50px" /></a> <a href="https://www.youtube.com/channel/UCraoOAE1En3wu__Vg-TFEYg"><img src="/blueyt.png" width="50px" height="50px" /></a></p>
+		<p>Last updated <span id="updated"></span></p>
 		<br />
-		<br />
-    </footer>
+		<script>
+			const date = new Date(document.lastModified);
+			document.getElementById("updated").innerHTML = date;
+		</script>
+</footer>
 </html>
