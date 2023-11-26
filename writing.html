@@ -94,6 +94,8 @@
 	  }
     .modal{
       position: fixed;
+      left: 0;
+      top: 0;
       z-index: 1;
       overflow: auto;
       width: 100%;
@@ -102,6 +104,9 @@
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     .modal-content{
+      position: fixed;
+      left: 50%;
+      top: 50%;
       background-color: #9ae2f5;
       border-radius: 20px;
       padding: 20px;
@@ -121,22 +126,22 @@
     <center>
       <p><h2>SELECTED WORKS</h2>
       <i>Use the buttons to filter by type of project.</i></p>
-      <div id="buttons">
-			  <button class="btn active" onclick="filterSelection('all'); console.log();">Reset</button>
-  			<button class="btn" onclick="filterSelection('journalism'); console.log();">Reporting</button>
-        <button class="btn" onclick="filterSelection('essay'); console.log();">Essays</button>
-  			<button class="btn" onclick="filterSelection('investigation'); console.log();">Investigations</button>
-  			<button class="btn" onclick="filterSelection('feature'); console.log();">Features</button>
-        <button class="btn" onclick="filterSelection('hst'); console.log();">Health, Science & Tech</button>
-        <button class="btn" onclick="filterSelection('data'); console.log();">Data</button>
-      </div>
-      <br/>
       <div id="modal1" class="modal" style="display: none;">
         <div class="modal-content">
         <p>lorem ipsum</p>
         <a href="#" onclick="hide(1)"><b>Close</b></a>
         </div>
       </div>
+      <div id="buttons">
+			  <button class="btn active" onclick="filterSelection('all')">Reset</button>
+  			<button class="btn" onclick="filterSelection('journalism')">Reporting</button>
+        <button class="btn" onclick="filterSelection('essay')">Essays</button>
+  			<button class="btn" onclick="filterSelection('investigation')">Investigations</button>
+  			<button class="btn" onclick="filterSelection('feature')">Features</button>
+        <button class="btn" onclick="filterSelection('hst')">Health, Science & Tech</button>
+        <button class="btn" onclick="filterSelection('data')">Data</button>
+      </div>
+      <br/>
 	    <div class="container">
             <a href="#" onclick="show(1)"><div class="filter journalism investigation box" style="background-image: url('/winstead.jpeg');background-size: 400px;"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/><br/></div></a>
             <div class="filter journalism feature box"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div>
