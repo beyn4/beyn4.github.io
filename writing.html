@@ -51,8 +51,6 @@
       border-radius: 25px;
       background-color: #9AE2F5;
       height: 200px;
-      display: flex;
-      align-items: end;
     }
 	  .btn {
 		  border: none;
@@ -104,10 +102,12 @@
       position: fixed;
       left: 25%;
       top: 50%;
-      width: 600px;
+      width: 500px;
       background-color: #9ae2f5;
       border-radius: 20px;
       padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, fr);
     }
     .modal-content > a{
     color: black;
@@ -126,7 +126,8 @@
       <i>Use the buttons to filter by type of project.</i></p>
       <div id="modal1" class="modal">
         <div class="modal-content">
-        <table><tr><td><img src="/winstead.jpeg" width="300"/></td><td>lorem ipsum</td></tr></table>
+        <img src="/winstead.jpg" width="400"/>
+        lorem ipsum
         <a href="#" onclick="hide(1)"><b>Close</b></a>
         </div>
       </div>
