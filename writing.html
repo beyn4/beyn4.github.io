@@ -48,16 +48,16 @@
 		  display: block;
 	  }
 	  .container{
-		  display: grid;
-          grid-template-columns: repeat(3, 1fr);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 	  }
-      .box {
+    .box {
       border-radius: 25px;
       background-color: #9AE2F5;
-	      height: 200px;
-          display: flex;
-          align-items: end;
-      }
+      height: 200px;
+      display: flex;
+      align-items: end;
+    }
 	  .btn {
 		  border: none;
 		  outline: none;
@@ -88,7 +88,7 @@
 		  from {
 			  transform: translateX(0vw);
 		  }
-		  to { 
+		  to {
 			  transform: translateX(-150vw);
 		  }
 	  }
@@ -101,20 +101,24 @@
 	</div>
 	<div class="main">
     <center>
-	    <p><h2>SELECTED WORKS</h2>
-		<i>Use the buttons to filter by type of project.</i></p>
-		<div id="buttons">
+      <p><h2>SELECTED WORKS</h2>
+      <i>Use the buttons to filter by type of project.</i></p>
+      <div id="buttons">
 			  <button class="btn active" onclick="filterSelection('all')">Reset</button>
   			<button class="btn" onclick="filterSelection('journalism')">Reporting</button>
-			<button class="btn" onclick="filterSelection('essay')">Essays</button>
+        <button class="btn" onclick="filterSelection('essay')">Essays</button>
   			<button class="btn" onclick="filterSelection('investigation')">Investigations</button>
   			<button class="btn" onclick="filterSelection('feature')">Features</button>
-			<button class="btn" onclick="filterSelection('hst')">Health, Science & Tech</button>
-			<button class="btn" onclick="filterSelection('data')">Data</button>
-		</div>
-        <br/>
+        <button class="btn" onclick="filterSelection('hst')">Health, Science & Tech</button>
+        <button class="btn" onclick="filterSelection('data')">Data</button>
+      </div>
+      <br/>
 	    <div class="container">
-            <div class="filter journalism investigation box" style="background-image: url('/winstead.jpeg');background-size: 400px;"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/><br/></div>
+            <a href="#" onclick="show(1)"><div class="filter journalism investigation box" style="background-image: url('/winstead.jpeg');background-size: 400px;"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/><br/></div></a>
+            <div id="winstead-modal" class="modal" style="display: none;">
+              lorem ipsum
+              <span onclick="hide(1)">X</span>
+            </div>
             <div class="filter journalism feature box"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div>
 			<div class="filter journalism hst investigation box"><b>Why accuracy of NC provider directories matters</b><br/>Aug. 4, 2022<br/><i><a href="/NC%20provider%20directories%20-%20Charlotte%20Observer.pdf">The News & Observer</a></i></div>
 	    <div class="filter journalism hst box"><b>Meta Pixel: the code that may have harvested health info</b><br/>June 20, 2022<br/><i><a href="Nadia%20Bey%20-%20Meta%20Pixel%20explainer.pdf">Charlotte Observer</a></i></div>
@@ -190,6 +194,10 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }</script>
+<script type="text/javascript">
+    const hide = (id) => document.getElementById(`modal${id}`).style.display = "none";
+    const show = (id) => document.getElementById(`modal${id}`).style.display = "block";
+</script>
 </body>
 <footer>
 		<p>Hosted by GitHub Pages. © Nadia Bey</p>
