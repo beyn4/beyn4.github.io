@@ -1,92 +1,104 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Writing - Nadia Bey</title>
 	<link rel="icon" type="image/x-icon" href="/nbfavicon.png">
   <style>
-    html, body {
-      margin: 0;
-      background-color: white;
-    }
-    #home th, #home td {
-      border: 0px;
-      width: 500px;
-    }
-    #home tr {
-      border: 0px;
-      text-align: justify;
-    }
-    footer {
-      font-size: 16px;
-      text-align: center;
-    }
-    .navbar{
-	     text-align: center;
-       font-size: 20px;
-       color: #0382A4;
-	     position: relative;
-	     margin: 5px;
-	     padding: 20px;
-	     display: flex;
-	     width: 100%;
-     }
-     a{
-       color: #03708D;
-       text-decoration: none;
-       padding: 5px;
-     }
-     a:hover{
-       color: #001269;
-     }
+	  html, body {
+		  margin: 0;
+		  background-color: white;
+	  }
+	  #home th, #home td {
+		  border: 0px;
+		  width: 500px;
+	  }
+	  #home tr {
+		  border: 0px;
+		  text-align: justify;
+	  }
+	  footer {
+		  font-size: 16px;
+		  text-align: center;
+	  }
+	  .navbar{
+		  text-align: center;
+		  font-size: 20px;
+		  color: #0382A4;
+		  position: relative;
+		  margin: 5px;
+		  padding: 20px;
+		  display: flex;
+		  width: 100%;
+	  }
+	  a{
+		  color: #03708D;
+		  text-decoration: none;
+		  padding: 5px;
+	  }
+	  a:hover{
+		  color: #001269;
+	  }
 	  .main a{
 		  padding: 0px;
 	  }
 	  .main{
 		  margin: 20px 100px 20px 100px;
 	  }
-
-    .filter {
-      color: #000000;
-      line-height: normal;
-      flex: 200px;
-      text-align: center;
-      margin: 2px;
-      display: none; /* Hidden by default */
-    }
-
-/* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-.container{
-	display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-/* Style the buttons */
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #0382A4;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: #001269;
-  }
-
-  .btn.active {
-    background-color: #001269;
-    color: white;
-  }
+	  .filter {
+		  color: #000000;
+		  line-height: normal;
+		  flex: 200px;
+		  text-align: center;
+		  margin: 2px;
+		  display: none;
+	  }
+	  .show {
+		  display: block;
+	  }
+	  .container{
+		  display: flex;
+		  flex-flow: row wrap;
+		  align-items: center;
+		  justify-content: space-around;
+	  }
+	  .btn {
+		  border: none;
+		  outline: none;
+		  padding: 12px 16px;
+		  background-color: #0382A4;
+		  cursor: pointer;
+	  }
+	  .btn:hover {
+		  background-color: #001269;
+		  color: white;
+	  }
+	  .btn.active {
+		  background-color: #001269;
+		  color: white;
+	  }
+	  .outlets{
+		  overflow: hidden;
+		  white-space: nowrap;
+	  }
+	  .scrolling{
+		  animation: marquee 2s linear infinite;
+		  display: inline-block;
+		  padding-right: 10px;
+	  }
+	  @keyframes marquee {
+		  from {
+			  transform: translateX(0);
+		  }
+		  to { 
+			  transform: translateX(-100%);
+		  }
+	  }
 
   </style>
 </head>
 <body>
 	<div class="navbar">
-		<a href="/index.html">HOME</a>  <a href="/about.html">ABOUT</a>  <a href="/writing.html">WRITING</a>  <a href="/projects.html">PROJECTS</a>
+		<a href="/index.html">HOME</a>  <a href="/about.html">ABOUT</a>  <a href="/research.html">RESEARCH</a>  <a href="/writing.html">WRITING</a>  <a href="/projects.html">PROJECTS</a>
 	</div>
 	<div class="main">
     <center>
@@ -118,9 +130,9 @@
 	<br />
 	<p><i>If you're interested in commissioning research or reporting, reach out at <b>beynadiaa [at] gmail [dot] com</b>.</i></p>
 		<br />
-		<p><h2>BYLINES IN</h2></p>
-  <p><a href="http://affinitymagazine.us/author/simplynadia"><img src="/affnews.png" alt="Affinity Magazine News"/></a><a href="http://culture.affinitymagazine.us/author/simplynadia"><img src="/affculture.png" alt="Affinity Magazine Arts and Culture"/></a><a href="https://www.dukechronicle.com/staff/nadia-bey"><img src="/chronlogo.png" alt="The Duke Chronicle"/></a><a href="https://www.jyi.org/nadia-bey"><img src="/jyi.png" height="50px" alt="Journal of Young Investigators"/></a><a href="https://www.hercampus.com/author/nadia-bey/"><img src="/hc logo.png" alt="Her Campus"/></a><a href="https://issuu.com/theacademic"><img src="/taz.png" height="50px" alt="The Academic Zine"/></a></p>
-<p><a href="https://www.charlotteobserver.com/profile/261574432"><img src="/observerlogo.png" alt="The Charlotte Observer"/></a><a href="https://www.newsobserver.com/profile/261574432"><img src="/nao logo.png" alt="The Raleigh News and Observer"/></a><a href="https://www.heraldsun.com/profile/261574432"><img src="/herald logo.png" alt="The Durham Herald-Sun"/></a><a href="https://ncinsider.com"><img src="/insider logo.png" alt="NC Insider"/></a><a href="https://www.healthaffairs.org/do/10.1377/hauthor20220420.528871/full/"><img src="/ha logo.png" alt="Health Affairs"/></a>
+		<p><h3>BYLINES IN</h3></p>
+	    <div class="outlets"><div class="scrolling"><a href="http://affinitymagazine.us/author/simplynadia"><img src="/affnews.png" alt="Affinity Magazine News"/></a></div><div class="scrolling"><a href="http://culture.affinitymagazine.us/author/simplynadia"><img src="/affculture.png" alt="Affinity Magazine Arts and Culture"/></a></div><div class="scrolling"><a href="https://www.dukechronicle.com/staff/nadia-bey"><img src="/chronlogo.png" alt="The Duke Chronicle"/></a></div><div class="scrolling"><a href="https://www.jyi.org/nadia-bey"><img src="/jyi.png" height="50px" alt="Journal of Young Investigators"/></a></div><div class="scrolling"><a href="https://www.hercampus.com/author/nadia-bey/"><img src="/hc logo.png" alt="Her Campus"/></a></div><div class="scrolling"><a href="https://issuu.com/theacademic"><img src="/taz.png" height="50px" alt="The Academic Zine"/></a></div>
+<div class="scrolling"><a href="https://www.charlotteobserver.com/profile/261574432"><img src="/observerlogo.png" alt="The Charlotte Observer"/></a></div><div class="scrolling"><a href="https://www.newsobserver.com/profile/261574432"><img src="/nao logo.png" alt="The Raleigh News and Observer"/></a></div><div class="scrolling"><a href="https://www.heraldsun.com/profile/261574432"><img src="/herald logo.png" alt="The Durham Herald-Sun"/></a></div><div class="scrolling"><a href="https://ncinsider.com"><img src="/insider logo.png" alt="NC Insider"/></a></div></div>
 		<br/>
 		<i>Click each logo to visit the respective outlets.</i></p>
 	  </center>
