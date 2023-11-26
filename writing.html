@@ -98,6 +98,7 @@
       top: 0;
       z-index: 1;
       overflow: auto;
+      display: none;
       width: 100%;
       height: 100%;
       background-color: rgb(0,0,0); /* Fallback color */
@@ -126,7 +127,7 @@
     <center>
       <p><h2>SELECTED WORKS</h2>
       <i>Use the buttons to filter by type of project.</i></p>
-      <div id="modal1" class="modal" style="display: none;">
+      <div id="modal1" class="modal">
         <div class="modal-content">
         <p>lorem ipsum</p>
         <a href="#" onclick="hide(1)"><b>Close</b></a>
@@ -180,6 +181,8 @@ filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filter");
+  console.log(x)
+  console.log(c)
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
