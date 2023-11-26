@@ -3,73 +3,9 @@
   <title>404 - Nadia Bey</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-  <script language="javascript">
-    function SetCookie (name,value,expires,path,domain,secure)
-    {
-      document.cookie = name + "=" + escape (value) +
-        ((expires) ? "; expires=" + expires.toGMTString() : "") +
-        ((path) ? "; path=" + path : "") +
-        ((domain) ? "; domain=" + domain : "") +
-        ((secure) ? "; secure" : "");
-    }
-
-    function DeleteCookie (name,path,domain)
-    {
-      if (GetCookie(name)) {
-        document.cookie = name + "=" +
-          ((path) ? "; path=" + path : "") +
-          ((domain) ? "; domain=" + domain : "") +
-          "; expires=Thu, 01-Jan-70 00:00:01 GMT";
-      }
-    }
-
-    function GetCookie (name)
-    {
-      var arg = name + "=";
-      var alen = arg.length;
-      var clen = document.cookie.length;
-      var i = 0;
-      while (i < clen) {
-        var j = i + alen;
-        if (document.cookie.substring(i, j) == arg)
-          return getCookieVal (j);
-        i = document.cookie.indexOf(" ", i) + 1;
-        if (i == 0) break;
-      }
-      return null;
-    }
-    function getCookieVal (offset)
-    {
-      var str = document.cookie.indexOf(";", offset);
-      if(str==-1) str = document.cookie.length;
-      return unescape(document.cookie.substring(offset, str));
-    }
-  </script>
-  <script language="javascript">
-
-  function DisplayVisits()
- {
-  // How many visits so far?
-      var numVisits = GetCookie("numVisits");
-      if (numVisits) numVisits = parseInt(numVisits) + 1;
-      else numVisits = 1; // the value for the new cookie
-
-  // Show the number of visits
-      var first = "This page uses cookies. This is your first visit.";
-      var rep = "This page uses cookies. Times visited: ";
-      if (numVisits==1) document.write('<font color=\"#595959\">' + first + '</font>');
-      else document.write('<font color=\"#595959\">' + rep + " " + numVisits + '</font>');
-
-  // Set the cookie to expire 365 days from now
-      var today = new Date();
-      today.setTime(today.getTime() + 365 /*days*/ * 24 /*hours*/ * 60 /*minutes*/ * 60 /*seconds*/ * 1000 /*milliseconds*/);
-      SetCookie("numVisits", numVisits, today);
-  }
-
-  </script>
   <style>
     body {
-      background-color: #ffa9a3;
+      background-color: #ffffff;
       font-size: 20px;
       font-family: "Open Sans", sans-serif;
       padding-top: 60px;
@@ -78,56 +14,23 @@
       padding-left: 30px;
     }
     h1 {
-      color: black;
+      color: #001269;
     }
     p {
-      color: #595959;
-    }
-    ul {
-      font-family: "Lato", sans-serif;
-      list-style-type: none;
-      margin-bottom: 10px;
-      margin-left: auto;
-      padding: 0px 10px 10px 10px;
-      display: inline;
       color: black;
-      float: right;
-    }
-    li {
-      float: left;
-      border-right: 3px solid #f87575;
-    }
-    li a {
-      color: #6b0606;
-      text-align: center;
-      padding: 20px;
-      font-size: 30px;
-      text-decoration: none;
-    }
-    li a:hover {
-      color: white;
-    }
-    li:last child {
-      border-right: none;
     }
     footer {
       font-size: 16px;
       text-align: center;
     }
     a {
-      color: #6b0606;
+      color: #001269;
       text-decoration: none;
     }
     a:hover {
       color: white;
     }
   </style>
-  <ul>
-  <li><a href="index.html">about</a></li>
-  <li><a href="academics.html">academics</a></li>
-  <li><a href="journalism.html">journalism</a></li>
-  <li><a href="press.html">in the wild</a></li>
-</ul>
 </head>
 <html>
 <body>
@@ -137,15 +40,14 @@
   <br />
   <br />
   <h1>Sorry! There's nothing here.</h1>
-<h2>Try the navigation bar above to find what you're looking for.</h2>
-<h3>(Looking for something else? Try my <a href="https://linktr.ee/nadiabey" target="_blank">Linktree</a> or contact me at beynadiaa [at] gmail [dot] com.)</center>
+<h2>Return to the <a href="/index.html">home page.</a></h2>
+<h3>(Looking for something else? Contact me at beynadiaa [at] gmail [dot] com.)</h3></center>
 </body>
 <footer>
   <footer>
   <br />
 <br />
-  <p>Hosted by GitHub Pages. © 2021 Nadia Bey</p>
-  <p><script language="javascript">DisplayVisits();</script></p>
+  <p>Hosted by GitHub Pages. © Nadia Bey</p>
 </footer>
 </footer>
 </html>
