@@ -92,6 +92,18 @@
 			  transform: translateX(-150vw);
 		  }
 	  }
+    .modal{
+      position: fixed;
+      z-index: 1;
+      overflow: auto;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .modal-content{
+      background-color: #9ae2f5;
+      border-radius: 20px;
+      padding: 20px;
+    }
 
   </style>
 </head>
@@ -116,28 +128,32 @@
 	    <div class="container">
             <a href="#" onclick="show(1)"><div class="filter journalism investigation box" style="background-image: url('/winstead.jpeg');background-size: 400px;"><b>The death of Danny Lee Winstead: a Duke public safety shooting and its aftermath</b><br/><br/></div></a>
             <div id="winstead-modal" class="modal" style="display: none;">
-              lorem ipsum
-              <span onclick="hide(1)">X</span>
+              <div class="modal-content">lorem ipsum
+              <span onclick="hide(1)">X</span></div>
             </div>
             <div class="filter journalism feature box"><b>'Do they feel like equals?': The history of sorority housing, dynamics with fraternities at Duke</b><br/>March 21, 2022<br/><i><a href="https://www.dukechronicle.com/article/2022/03/duke-university-greek-life-sorority-housing-selective-living-groups-history-fraternity-quadex">Duke Chronicle</a></i></div>
-			<div class="filter journalism hst investigation box"><b>Why accuracy of NC provider directories matters</b><br/>Aug. 4, 2022<br/><i><a href="/NC%20provider%20directories%20-%20Charlotte%20Observer.pdf">The News & Observer</a></i></div>
-	    <div class="filter journalism hst box"><b>Meta Pixel: the code that may have harvested health info</b><br/>June 20, 2022<br/><i><a href="Nadia%20Bey%20-%20Meta%20Pixel%20explainer.pdf">Charlotte Observer</a></i></div>
-	    <div class="filter essay box"><b>Navigating My Care in a Pandemic</b><br />Oct. 21, 2020<br/><i><a href="https://dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e">Duke Center for Global Women's Health Technologies Blog</a></i></div>
-        <div class="filter journalism hst box"><b>Let’s Get This Bread: Sourdough May Reduce Immune Response</b><br />Oct. 27, 2021<br/><i><a href="https://www.jyi.org/2021-october/2021/10/27/lets-get-this-bread-sourdough-may-reduce-immune-response">Journal of Young Investigators</a></i></div><div class="filter journalism hst box"><b>New Drug Lowers Cortisol in Cushing’s Disease Patients</b><br />July 1, 2020<br/><i><a href="https://www.jyi.org/2020-july/2020/7/1/new-drug-lowers-cortisol-in-cushings-disease-patients">Journal of Young Investigators</a></i></div>
-		    <div class="filter hst box"><b>Pharma’s Biggest Losses: Once-Dropped Drugs Make Lucrative Comebacks</b><br/>May 10, 2023<br/><i><a href="https://www.biospace.com/article/pharma-s-biggest-losses-once-dropped-drugs-make-lucrative-comebacks/">BioSpace</a></i></div><div class="filter data box"><b>A journey through four years worth of food points</b><br />March 30, 2023<br/><i><a href="https://www.dukechronicle.com/article/2023/03/duke-dining-food-points-journey-through-four-years">Duke Chronicle</a></i></div>
-		    <div class="filter journalism box"><b>Shootings can have lasting effects on youth. What's being done to help in Mecklenburg?</b><br/>March 31, 2023<br/><i><a href="https://www.charlotteobserver.com/news/local/crime/article273637705.html">Charlotte Observer</a></i></div><div class="filter journalism investigation data box"><b>Charlotte's gun violence toll since 2021: At least 73 kids, teens shot; 33 were killed</b><br/>March 31, 2023<br/><i><a href="https://www.charlotteobserver.com/news/local/crime/article273635740.html">Charlotte Observer</a></i></div>
-		    <div class="filter essay hst box"><b>We Need More Awareness and Research on Benign Breast Conditions</b><br/>July 11, 2023<br/><i><a href="https://msmagazine.com/2023/07/11/benign-breast-disease-cancer-tumor-cyst-scar-tissue/">Ms. Magazine</a></i></div><div class="filter hst journalism investigation box"><b>How has NC spent $40 million from Juul settlement?</b><br/>July 6, 2022<br/><i><a href="How%20has%20NC%20spent%20%2440%20million%20from%20Juul%20settlement_%20_%20Charlotte%20Observer.pdf">Charlotte Observer</a></i></div>
-		    <div class="filter data box"><b>Building an interactive graphic for teacher salaries</b><br/>Aug. 14, 2023<br/><i><a href="https://dataviz.chalkbeat.org/2023/08/14/teacher-salaries.html">Chalkbeat</a></i></div>
+			      <div class="filter journalism hst investigation box"><b>Why accuracy of NC provider directories matters</b><br/>Aug. 4, 2022<br/><i><a href="/NC%20provider%20directories%20-%20Charlotte%20Observer.pdf">The News & Observer</a></i></div>
+	          <div class="filter journalism hst box"><b>Meta Pixel: the code that may have harvested health info</b><br/>June 20, 2022<br/><i><a href="Nadia%20Bey%20-%20Meta%20Pixel%20explainer.pdf">Charlotte Observer</a></i></div>
+	          <div class="filter essay box"><b>Navigating My Care in a Pandemic</b><br />Oct. 21, 2020<br/><i><a href="https://dukegwht.medium.com/navigating-my-care-in-a-pandemic-5883f5c3ec2e">Duke Center for Global Women's Health Technologies Blog</a></i></div>
+            <div class="filter journalism hst box"><b>Let’s Get This Bread: Sourdough May Reduce Immune Response</b><br />Oct. 27, 2021<br/><i><a href="https://www.jyi.org/2021-october/2021/10/27/lets-get-this-bread-sourdough-may-reduce-immune-response">Journal of Young Investigators</a></i></div>
+            <div class="filter journalism hst box"><b>New Drug Lowers Cortisol in Cushing’s Disease Patients</b><br />July 1, 2020<br/><i><a href="https://www.jyi.org/2020-july/2020/7/1/new-drug-lowers-cortisol-in-cushings-disease-patients">Journal of Young Investigators</a></i></div>
+		        <div class="filter hst box"><b>Pharma’s Biggest Losses: Once-Dropped Drugs Make Lucrative Comebacks</b><br/>May 10, 2023<br/><i><a href="https://www.biospace.com/article/pharma-s-biggest-losses-once-dropped-drugs-make-lucrative-comebacks/">BioSpace</a></i></div>
+            <div class="filter data box"><b>A journey through four years worth of food points</b><br />March 30, 2023<br/><i><a href="https://www.dukechronicle.com/article/2023/03/duke-dining-food-points-journey-through-four-years">Duke Chronicle</a></i></div>
+		        <div class="filter journalism box"><b>Shootings can have lasting effects on youth. What's being done to help in Mecklenburg?</b><br/>March 31, 2023<br/><i><a href="https://www.charlotteobserver.com/news/local/crime/article273637705.html">Charlotte Observer</a></i></div>
+            <div class="filter journalism investigation data box"><b>Charlotte's gun violence toll since 2021: At least 73 kids, teens shot; 33 were killed</b><br/>March 31, 2023<br/><i><a href="https://www.charlotteobserver.com/news/local/crime/article273635740.html">Charlotte Observer</a></i></div>
+		        <div class="filter essay hst box"><b>We Need More Awareness and Research on Benign Breast Conditions</b><br/>July 11, 2023<br/><i><a href="https://msmagazine.com/2023/07/11/benign-breast-disease-cancer-tumor-cyst-scar-tissue/">Ms. Magazine</a></i></div>
+            <div class="filter hst journalism investigation box"><b>How has NC spent $40 million from Juul settlement?</b><br/>July 6, 2022<br/><i><a href="How%20has%20NC%20spent%20%2440%20million%20from%20Juul%20settlement_%20_%20Charlotte%20Observer.pdf">Charlotte Observer</a></i></div>
+		        <div class="filter data box"><b>Building an interactive graphic for teacher salaries</b><br/>Aug. 14, 2023<br/><i><a href="https://dataviz.chalkbeat.org/2023/08/14/teacher-salaries.html">Chalkbeat</a></i></div>
 	    </div>
-	<br />
-	<p><i>If you're interested in commissioning research or reporting, reach out at <b>beynadiaa [at] gmail [dot] com</b>.</i></p>
-		<br />
-		<p><h3>Bylines in</h3></p>
+      <br />
+      <p><i>If you're interested in commissioning research or reporting, reach out at <b>beynadiaa [at] gmail [dot] com</b>.</i></p>
+      <br />
+      <p><h3>Bylines in</h3></p>
 	    <div class="outlets"><div class="scrolling"><a href="http://affinitymagazine.us/author/simplynadia"><img src="/affnews.png" alt="Affinity Magazine News"/></a></div><div class="scrolling"><a href="http://culture.affinitymagazine.us/author/simplynadia"><img src="/affculture.png" alt="Affinity Magazine Arts and Culture"/></a></div><div class="scrolling"><a href="https://www.dukechronicle.com/staff/nadia-bey"><img src="/chronlogo.png" alt="The Duke Chronicle"/></a></div><div class="scrolling"><a href="https://www.jyi.org/nadia-bey"><img src="/jyi.png" height="50px" alt="Journal of Young Investigators"/></a></div><div class="scrolling"><a href="https://www.hercampus.com/author/nadia-bey/"><img src="/hc logo.png" alt="Her Campus"/></a></div><div class="scrolling"><a href="https://issuu.com/theacademic"><img src="/taz.png" height="50px" alt="The Academic Zine"/></a></div><div class="scrolling"><a href="https://www.charlotteobserver.com/profile/261574432"><img src="/observerlogo.png" alt="The Charlotte Observer"/></a></div><div class="scrolling"><a href="https://www.newsobserver.com/profile/261574432"><img src="/nao logo.png" alt="The Raleigh News and Observer"/></a></div><div class="scrolling"><a href="https://www.heraldsun.com/profile/261574432"><img src="/herald logo.png" alt="The Durham Herald-Sun"/></a></div><div class="scrolling"><a href="https://ncinsider.com"><img src="/insider logo.png" alt="NC Insider"/></a></div></div>
-		<br/>
+		  <br/>
 	  </center>
 	</div>
-		<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
   <script>
   kofiWidgetOverlay.draw('nadiabey', {
     'type': 'floating-chat',
